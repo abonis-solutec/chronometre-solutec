@@ -1,7 +1,9 @@
 public static void main(String[] args) {
-    formulaire f = new formulaire();
     formulaire_dentiste fd = new formulaire_dentiste();
-    String nom = f.getNom();
+    fd.setNom("Le patient");
     String nompatient = fd.getNom();
+    fd.setNomD("Marcel");
     String nomdentiste = fd.getNomD();
+    System.out.println("\nNom du dentiste : " + nomdentiste);
+    System.out.println("Nom du patient : " + nompatient);
 }
