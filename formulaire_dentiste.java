@@ -1,5 +1,4 @@
-import java.util.package;
-import package.formulaire
+package formulaire;
 public class formulaire_dentiste extends formulaire {
     private String nom_dentiste;
     public String getNomD() {
