@@ -6,8 +6,8 @@ public class formulaire {
             return nom;
         }
     public String getDate() {
-            return date;
-        }
+        return date;
+            }
 }
 
 public class formulaire_dentiste extends formulaire {
