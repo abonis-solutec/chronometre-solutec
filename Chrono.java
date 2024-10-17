@@ -47,8 +47,8 @@ public class Chrono {
                 st = System.currentTimeMillis();
                 long[] tab = new long[3];
                 tab[0] = st;
-                tab[1] = m;
-                tab[2] = s;
+                tab[1] = s;
+                tab[2] = m;
                 return tab;
             }
         }
