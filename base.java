@@ -1,22 +1,18 @@
 public class formulaire {
-    private:
-        String nom;
-        String date;
+    private String nom;
+    private String date;
 
-    public:
-        String getNom() {
+    public String getNom() {
             return nom;
         }
-        String getDate() {
+    public String getDate() {
             return date;
         }
 }
 
 public class formulaire_dentiste extends formulaire {
-    private:
-        String nom_dentiste;
-    public:
-        String getNomD() {
+    private String nom_dentiste;
+    public String getNomD() {
             return nom_dentiste;
         }
 }
