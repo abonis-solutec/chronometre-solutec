@@ -30,9 +30,9 @@ public class Chrono {
     }
 
     public long[] unit(long st, long s, long m) {
-        while (minutes < 100)
+        while (m < 100)
         {
-            long actual_time =  System.currentTimeMillis() - st;
+            long actual_time =  System.currentTimeMillis() - starting_time;
             if (actual_time > 1000*(s+1)) {
                 s++;
                 if (s != 60) {
@@ -41,8 +41,7 @@ public class Chrono {
                 else {
                     m++;
                     s = 0;
-                    //System.out.println(m + " : " + s);
-                    st = System.currentTimeMillis();
+                    //st = System.currentTimeMillis();
                 }  
                 st = System.currentTimeMillis();
                 long[] tab = new long[3];
