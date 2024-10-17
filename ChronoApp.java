@@ -1,13 +1,23 @@
 public class ChronoApp {
     public static void main(String[] args) {
-        formulaire_dentiste fd = new formulaire_dentiste();
-        fd.setNom("Le patient");
-        String nompatient = fd.getNom();
-        fd.setNomD("Marcel");
-        String nomdentiste = fd.getNomD();
-        System.out.println("\nNom du dentiste : " + nomdentiste);
-        System.out.println("Nom du patient : " + nompatient);
-        //long time_ms = System.currentTimeMillis();
+        long starting_time = System.currentTimeMillis();
         //System.out.println("Temps actuel : " + time_ms);
+        int minutes = 0;
+        int secondes = 0;
+        System.out.println("\n"+minutes + " : "+ secondes);
+        while (minutes < 90) {
+            long actual_time =  System.currentTimeMillis() - starting_time;
+            if (actual_time > 1000*(secondes+1)) {
+                secondes++;
+                if (secondes != 60)
+                    System.out.println(minutes + " : "+ secondes);
+                else {
+                    minutes++;
+                    secondes = 0;
+                    System.out.println(minutes + " : " + secondes);
+                    starting_time = System.currentTimeMillis();
+                }  
+            }
+        }
     }
 }
