@@ -6,9 +6,12 @@ public class ChronoAppX {
         long minutes_ = ch.getMinutes();
         boolean running = true;
         long[] tab_ = new long[3];
+        tab_[0] = starting_time_;
+        tab_[1] = secondes_;
+        tab_[2] = minutes_;
         while (minutes_ < 90) {
             if(running) {
-                tab_ = ch.unit(starting_time_, secondes_, minutes_);
+                tab_ = ch.unit(tab_[0], tab_[1], tab_[2]);
                 System.out.println(tab_[2]+" : "+tab_[1]);
             }
         }
