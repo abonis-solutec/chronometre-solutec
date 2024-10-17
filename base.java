@@ -3,18 +3,18 @@ public class formulaire {
     private String date;
 
     public String getNom() {
-            return nom;
-        }
+        return nom;
+    }
     public String getDate() {
         return date;
-            }
+    }
 }
 
 public class formulaire_dentiste extends formulaire {
     private String nom_dentiste;
     public String getNomD() {
-            return nom_dentiste;
-        }
+        return nom_dentiste;
+    }
 }
 
 public static void main(String[] args) {
