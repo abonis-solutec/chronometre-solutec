@@ -32,18 +32,14 @@ public class Chrono {
     public long[] unit(long st, long s, long m) {
         while (m < 100)
         {
-            long actual_time =  System.currentTimeMillis() - starting_time;
+            long actual_time =  System.currentTimeMillis() - st;
             if (actual_time > 1000*(s+1)) {
                 s++;
-                /*if (s != 60) {
-                    //    System.out.println(m + " : "+ s);
-                }*/
                 if (s == 60) {
                     m++;
                     s = 0;
-                    //st = System.currentTimeMillis();
-                }  
-                st = System.currentTimeMillis();
+                    st = System.currentTimeMillis();
+                }
                 long[] tab = new long[3];
                 tab[0] = st;
                 tab[1] = s;
