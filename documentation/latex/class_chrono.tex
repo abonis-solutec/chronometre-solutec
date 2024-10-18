@@ -1,0 +1,67 @@
+\doxysection{Chrono Class Reference}
+\hypertarget{class_chrono}{}\label{class_chrono}\index{Chrono@{Chrono}}
+
+
+Classe gérant la logique métier du \doxylink{class_chrono}{Chrono}.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_chrono_a17b796a07a5fc78bd9ff36fb0dcc4791}\label{class_chrono_a17b796a07a5fc78bd9ff36fb0dcc4791} 
+long {\bfseries get\+Starting\+Time} ()
+\item 
+\Hypertarget{class_chrono_a4a6a64f8cba1a9b0d5678e326f817aca}\label{class_chrono_a4a6a64f8cba1a9b0d5678e326f817aca} 
+long {\bfseries get\+Minutes} ()
+\item 
+\Hypertarget{class_chrono_ae4f04177933c5cb6f8f161c17d5bfc39}\label{class_chrono_ae4f04177933c5cb6f8f161c17d5bfc39} 
+long {\bfseries get\+Secondes} ()
+\item 
+\Hypertarget{class_chrono_a51e458c50954223b4bc3da7353673962}\label{class_chrono_a51e458c50954223b4bc3da7353673962} 
+void {\bfseries set\+Starting\+Time} (int st)
+\item 
+\Hypertarget{class_chrono_a80ed972e07459f68a8634adbdbab32cf}\label{class_chrono_a80ed972e07459f68a8634adbdbab32cf} 
+void {\bfseries set\+Minutes} (int m)
+\item 
+\Hypertarget{class_chrono_a46ac2207dd3ee42740e1ab1be391bcf3}\label{class_chrono_a46ac2207dd3ee42740e1ab1be391bcf3} 
+void {\bfseries set\+Secondes} (int s)
+\item 
+long\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_chrono_a5c19baa1dff25c3391aa1b37c5f3e4f9}{unit}} (long st, long s, long m)
+\begin{DoxyCompactList}\small\item\em Fonction permettant le calcul des valeurs de scondes et minutes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe gérant la logique métier du \doxylink{class_chrono}{Chrono}. 
+
+Cette classe permet de gérer tout ce qu\textquotesingle{}il y a en rapport avec l\textquotesingle{}évolution des minutes et secondes en fonction du temps. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_chrono_a5c19baa1dff25c3391aa1b37c5f3e4f9}\index{Chrono@{Chrono}!unit@{unit}}
+\index{unit@{unit}!Chrono@{Chrono}}
+\doxysubsubsection{\texorpdfstring{unit()}{unit()}}
+{\footnotesize\ttfamily \label{class_chrono_a5c19baa1dff25c3391aa1b37c5f3e4f9} 
+long\mbox{[}$\,$\mbox{]} Chrono.\+unit (\begin{DoxyParamCaption}\item[{long}]{st}{, }\item[{long}]{s}{, }\item[{long}]{m}{}\end{DoxyParamCaption})}
+
+
+
+Fonction permettant le calcul des valeurs de scondes et minutes. 
+
+Cette fonction permet de mettre à jour les secondes et les minutes en fonction du temps réel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em st} & Paramètre correspondant au temps de départ. \\
+\hline
+{\em s} & Paramètre correspondant aux secondes. \\
+\hline
+{\em m} & Paramètre correspondant aux minutes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retourne un tableau contenant les nouvelles valeurs de "{}st"{}, "{}s"{} et "{}m"{}. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+chronometre-\/solutec/Chrono.\+java\end{DoxyCompactItemize}

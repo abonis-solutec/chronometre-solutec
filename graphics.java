@@ -1,4 +1,3 @@
-import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
@@ -6,10 +5,22 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+/**
+ * \brief Classe gérant tout l'affichage graphique
+ * 
+ * Cette classe permet de créer une fenêtre graphique en utilisant la librairie Swing.
+ * Elle gère également la récupération des valeurs du temps devant être affiché.
+ */
 public class Graphics {
     private static boolean[] running = new boolean[1];
     private static long[] tab_ = new long[3];
 
+    /**
+     * \brief Fonction mère de la classe Graphics.
+     * 
+     * @param ch
+     * Instance de type Chrono pour récupérer les valeurs mises à jour.
+     */
     public void fenetre(Chrono ch) {
         running[0] = false;
         long starting_time_ = ch.getStartingTime();
