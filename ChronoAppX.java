@@ -16,14 +16,12 @@ public class ChronoAppX {
         JButton startButton = new JButton("Start");
         JButton stopButton = new JButton("Stop");
         startButton.addActionListener(new ActionListener() {
-            @Override
             public void actionPerformed(ActionEvent e) {
                 running = true;
             }
         });
         panel.add(startButton);
         stopButton.addActionListener(new ActionListener() {
-            @Override
             public void actionPerformed(ActionEvent e) {
                 running = false;
             }
@@ -37,6 +35,7 @@ public class ChronoAppX {
         long secondes_ = ch.getSecondes();
         long minutes_ = ch.getMinutes();
         long[] tab_ = new long[3];
+        boolean dispZero = true;
         tab_[0] = starting_time_;
         tab_[1] = secondes_;
         tab_[2] = minutes_;
@@ -45,12 +44,16 @@ public class ChronoAppX {
             if(running) {
                 tab_ = ch.unit(tab_[0], tab_[1], tab_[2]);
                 System.out.println(tab_[2]+" : "+tab_[1]);
+                dispZero = true;
             }
             else {
-                System.out.println("0 : 0");
                 tab_[0] = System.currentTimeMillis();
                 tab_[1] = secondes_;
                 tab_[2] = minutes_;
+                if(dispZero) {
+                    System.out.println("0 : 0");
+                    //dispZero = false;
+                }
             }
         }
         /*long starting_time = System.currentTimeMillis();
