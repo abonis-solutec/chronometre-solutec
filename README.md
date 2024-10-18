@@ -1,7 +1,7 @@
 # Super Chrono Solutec<sup>3000</sup>
 
 Chronomètre simple avec interface basique en Java réalisé en un jour dans le cadre de la période d'intercontrat dans l'entreprise Solutec Lyon.
-> Auteurs : Sergi PRADS-RODRIGUEZ et Alexis BONIS
+> Auteurs : Sergi PRADAS RODRIGUEZ et Alexis BONIS
 
 ## 
 
