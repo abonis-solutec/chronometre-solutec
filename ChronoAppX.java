@@ -14,6 +14,7 @@ public class ChronoAppX {
         frame.setSize(400, 300);
         JPanel panel = new JPanel();
         JButton startButton = new JButton("Start");
+        JButton stopButton = new JButton("Stop");
         startButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -21,6 +22,13 @@ public class ChronoAppX {
             }
         });
         panel.add(startButton);
+        stopButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                running = false;
+            }
+        });
+        panel.add(stopButton);
         frame.add(panel);
         frame.setVisible(true);
 
@@ -33,14 +41,17 @@ public class ChronoAppX {
         tab_[1] = secondes_;
         tab_[2] = minutes_;
 
-        System.out.println("0 : 0");
         while (tab_[2] < 90) {
             if(running) {
                 tab_ = ch.unit(tab_[0], tab_[1], tab_[2]);
                 System.out.println(tab_[2]+" : "+tab_[1]);
             }
-            else
+            else {
                 System.out.println("0 : 0");
+                tab_[0] = System.currentTimeMillis();
+                tab_[1] = secondes_;
+                tab_[2] = minutes_;
+            }
         }
         /*long starting_time = System.currentTimeMillis();
         //System.out.println("Temps actuel : " + time_ms);
