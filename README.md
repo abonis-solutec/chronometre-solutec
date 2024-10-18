@@ -14,4 +14,4 @@ Notre chronomètre possède deux boutons simples :
 - Un bouton Restart qui permet de remmettre le chronomètre à zéro, et d'afficher la valeur du temps final avant la remise à zéro
 
 ### Screenshot du projet
-![Capture d'écran de l'interface](images/capture_interface1.png)
+![Capture d'écran de l'interface](images/capture_interface1.PNG)
