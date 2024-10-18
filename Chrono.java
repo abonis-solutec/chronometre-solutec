@@ -35,10 +35,10 @@ public class Chrono {
             long actual_time =  System.currentTimeMillis() - starting_time;
             if (actual_time > 1000*(s+1)) {
                 s++;
-                if (s != 60) {
+                /*if (s != 60) {
                     //    System.out.println(m + " : "+ s);
-                }
-                else {
+                }*/
+                if (s == 60) {
                     m++;
                     s = 0;
                     //st = System.currentTimeMillis();

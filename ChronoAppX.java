@@ -9,7 +9,7 @@ public class ChronoAppX {
         tab_[0] = starting_time_;
         tab_[1] = secondes_;
         tab_[2] = minutes_;
-        while (minutes_ < 90) {
+        while (tab_[2] < 90) {
             if(running) {
                 tab_ = ch.unit(tab_[0], tab_[1], tab_[2]);
                 System.out.println(tab_[2]+" : "+tab_[1]);
