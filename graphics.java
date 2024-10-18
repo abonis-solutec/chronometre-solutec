@@ -21,7 +21,7 @@ public class Graphics {
 
         JFrame frame = new JFrame("Super Chrono Solutec3000");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(400, 300);
+        frame.setSize(350, 100);
         JPanel panel = new JPanel();
         JButton startButton = new JButton("Start");
         JButton restartButton = new JButton("Restart");
